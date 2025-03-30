@@ -15,7 +15,7 @@ interface toolkitType {
 };
 
 export default async function Toolkit() {
-    const response = await fetch("https://tigerxinsights-deploy.vercel.app/api/toolkit", { cache: "no-store" });
+    const response = await fetch("https://tigerxinsights.com/api/toolkit", { cache: "no-store" });
     const data: toolkitType = await response.json();
     return (
         <>
